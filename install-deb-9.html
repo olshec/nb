@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Knowledge base</title>
+</head>
+
+<body>
+    <pre>
+
+    --install tplink 821n
+
+        sudo apt-get install git build-essential dkms
+
+        git clone https://github.com/Mange/rtl8192eu-linux-driver.git
+
+        sudo dkms add ./rtl8192eu-linux-driver
+
+        sudo dkms install -m rtl8192eu -v 1.0
+
+        reboot
+
+
+    --for write ntfs disk:
+    apt install gnome-disk-utility
+    ntfs-3g 
+    nano /etc/fstab: /dev/sdb1    /media/user1/mnt    ntfs-3g    umask=0,user,locale=ru_RU.UTF-8    0    0
+
+
+    --for sudo: 
+    nano /etc/sudoers
+    --write: user1    ALL=(ALL:ALL) ALL
+
+
+
+    apt-get install pulseaudio
+    amixer set Master 5%+ 
+    amixer set Master 5%-
+    amixer set Master toggle
+
+
+
+
+    sudo apt-get install apache2 php libapache2-mod-php mysql-client mysql-server phpmyadmin
+
+    systemctl status mysqld
+
+    sudo mysql_secure_installation
+
+    --phpmyadmin:
+    nano /etc/apache2/apache2.conf
+    -- add the following line:
+    Include /etc/phpmyadmin/apache.conf 
+
+    create user 'test'@'localhost' identified by '123';
+    grant all privileges on *.* to 'test'@'localhost' ;
+    flush privileges;
+    </pre>
+
+    
+</body>
+
+</html>
