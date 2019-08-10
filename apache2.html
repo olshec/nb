@@ -33,6 +33,46 @@
     sudo stop apache2
     sudo reload apache2
     sudo restart apache2
+
+
+    Чтобы установить PHP 7.3 по умолчанию, запустите:
+
+update-alternatives --set php /usr/bin/php7.3
+ 
+
+Прежде чем мы сможем настроить Apache для использования PHP 7.3, нам нужно отключить старую версию PHP 7.0, набрав:
+
+a2dismod php7.0
+ 
+
+Теперь включите только что установленную версию PHP 7.3 с помощью следующей команды:
+
+a2enmod php7.3
+ 
+
+Перезапустите веб-сервер Apache, чтобы изменения вступили в силу:
+
+    systemctl restart apache2
+
+
+
+
+    20-xdebug.ini:
+    
+zend_extension=xdebug.so
+    
+display_errors = On
+display_startup_errors = On
+
+[xdebug]
+xdebug.remote_enable=1
+xdebug.remote_autostart=1
+xdebug.remote_host=127.0.0.1
+xdebug.remote_log=/var/www/html/xdebug.log
+xdebug.remote_connect_back=0
+xdebug.remote_port=9000
+    
+    
     </pre>
 </body>
 
