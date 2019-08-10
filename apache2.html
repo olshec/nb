@@ -14,6 +14,7 @@
     
     <code>sudo /etc/init.d/apache2 reload</code>
 
+    systemctl restart apache2
 
 
     Для перезапуска используйте:
@@ -33,9 +34,10 @@
     sudo stop apache2
     sudo reload apache2
     sudo restart apache2
+ </pre>
+    Образец файла с настройками: <a href="000-default.conf">образец</a>  
 
-
-
+ <pre>
     Install php7.3:
 
 sudo apt -y install lsb-release apt-transport-https ca-certificates 
