@@ -13,37 +13,9 @@
 </head>
 
 <body>
+<?php include 'navigator.php';?>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <!-- Links -->
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="apache2.html">apache2</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="yii2.html">yii2</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="git.html">git</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="php.html">php</a>
-        </li>
 
-        <!-- Dropdown -->
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                debian 9
-            </a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="install-deb-9.html">Install debian 9</a>
-                <a class="dropdown-item" href="#">Utilites</a>
-            </div>
-        </li>
-
-    </ul>
-</nav>
-<br>
 <div class="container">
         <a href="#install-php" class="btn btn-primary" data-toggle="collapse">установка php</a>
         <div id="install-php" class="collapse">
