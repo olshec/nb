@@ -1,19 +1,30 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Links -->
         <ul class="navbar-nav">
+         
             <li class="nav-item">
                 <a class="nav-link" href="apache2.php">apache2</a>
             </li>
+         
             <li class="nav-item">
                 <a class="nav-link" href="yii2.php">yii2</a>
             </li>
+         
             <li class="nav-item">
                 <a class="nav-link" href="git.php">git</a>
             </li>
+         
             <li class="nav-item">
                 <a class="nav-link" href="php.php">php</a>
             </li>
-
+         
+            <li class="nav-item">
+                <a class="nav-link" href="ssh.php">ssh</a>
+            </li>
+         <li class="nav-item">
+                <a class="nav-link" href="composer.php">ssh</a>
+            </li>
+         
             <!-- Dropdown -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">

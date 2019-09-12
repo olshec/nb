@@ -41,17 +41,28 @@
 <br>
 
 <div class="container">
-                <a href="#git-utilites" class="btn btn-primary" data-toggle="collapse">git-utilites</a>
-                <div id="git-utilites" class="collapse">
-<pre>
+  <a href="#git-utilites" class="btn btn-primary" data-toggle="collapse">git-utilites</a>
+  <div id="git-utilites" class="collapse">
+    <pre>
+    
+       Utilites: gitk, gitg
+    <pre>
+  </div>
+</div>
+<br>
 
-        Utilites: gitk, gitg
-<pre>
-                </div>
-            </div>
-            <br>
 
+<div class="container">
+  <a href="#git-commands" class="btn btn-primary" data-toggle="collapse">git-commands</a>
+  <div id="git-commands" class="collapse">
+    <pre>
+    
+       git reflog - find lost commits
+    <pre>
+  </div>
+</div>
 
+    
 </body>
 
 </html>

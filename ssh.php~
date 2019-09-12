@@ -1,0 +1,6 @@
+sudo systemctl restart ssh
+service ssh restart
+
+emacs /etc/ssh/sshd_config
+
+ssh  -N -D 12345 olegshev2018@34.66.54.197
