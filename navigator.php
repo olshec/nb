@@ -24,6 +24,9 @@
          <li class="nav-item">
                 <a class="nav-link" href="composer.php">ssh</a>
             </li>
+         <li class="nav-item">
+                <a class="nav-link" href="rust.php">rust</a>
+            </li>
          
             <!-- Dropdown -->
             <li class="nav-item dropdown">

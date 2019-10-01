@@ -22,6 +22,8 @@
     emacs /etc/ssh/sshd_config
 
     ssh  -N -D 12345 olegshev2018@34.66.54.197
+
+    scp -P 22 '/home/user1/Downloads/mydb.sql' user1@35.200.255.71:~/load/
 </pre>
 
 </body>
