@@ -53,12 +53,12 @@
             <div id="settings-xdebug" class="collapse">
                 <pre>
     
-        Настройка xdebug (файл 20-xdebug.ini):
+        Настройка php (файл php.ini):
         zend_extension=xdebug.so
-        
         display_errors = On
         display_startup_errors = On
-        
+
+        Настройка xdebug (файл 20-xdebug.ini):
         [xdebug]
         xdebug.remote_enable=1
         xdebug.remote_autostart=1
