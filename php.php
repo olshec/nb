@@ -69,6 +69,20 @@
             </pre>
         </div>
     </div>
+	<br>
+
+	<div class="container">
+            <a href="#settings-phpdoc" class="btn btn-primary" data-toggle="collapse">настройка phpdoc</a>
+            <div id="settings-phpdoc" class="collapse">
+                <pre>
+    
+        composer global remove phpdocumentor/phpdocumentor
+        composer global require jms/serializer:1.7.* (as pointer @rvanbaalen )
+        composer global require phpdocumentor/phpdocumentor:^2.9
+            </pre>
+        </div>
+    </div>
+    
 
 
 </body>
