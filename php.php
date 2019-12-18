@@ -79,6 +79,12 @@
         composer global remove phpdocumentor/phpdocumentor
         composer global require jms/serializer:1.7.* (as pointer @rvanbaalen )
         composer global require phpdocumentor/phpdocumentor:^2.9
+        
+        
+        
+        phpdoc --directory=MyConmpany/ \
+        --target=documentsDirectory/ \
+        --title='docTest'
             </pre>
         </div>
     </div>

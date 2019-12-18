@@ -27,6 +27,9 @@
          <li class="nav-item">
                 <a class="nav-link" href="rust.php">rust</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mysql.php">mysql</a>
+            </li>
          
             <!-- Dropdown -->
             <li class="nav-item dropdown">

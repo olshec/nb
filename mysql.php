@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -14,16 +15,29 @@
 <body>
 <?php include 'navigator.php';?>
 
-  	<pre>
+<div class="container">
+    <a href="#mariadb-config" class="btn btn-primary" data-toggle="collapse">change password</a>
+    <div id="mariadb-config" class="collapse">
+        <pre>
 
-composer update --no-dev
+            sudo systemctl stop mariadb
+            SET PASSWORD FOR 'root'@'localhost' = PASSWORD('1111');
         </pre>
-
+    </div>
+</div>
 <br>
 
 
 
-
+    
 </body>
 
 </html>
+
+
+
+
+
+
+
+

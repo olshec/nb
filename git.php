@@ -46,7 +46,7 @@
     <pre>
     
        Utilites: gitk, gitg
-    <pre>
+    </pre>
   </div>
 </div>
 <br>
@@ -58,7 +58,7 @@
     <pre>
     
        git reflog - find lost commits
-    <pre>
+    </pre>
   </div>
 </div>
 
