@@ -68,6 +68,16 @@
 
     --for disable keyrig
     sudo apt-get install seahorse
+
+
+    display power on both:
+        #!/bin/bash
+        xrandr --output HDMI-1 --auto
+        xrandr --output VGA-1 --right-of HDMI-1 --auto
+
+        #!/bin/bash
+        xrandr --output VGA-1 --auto
+        xrandr --output HDMI-1 --off
     </pre>
 
     
