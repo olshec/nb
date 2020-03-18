@@ -19,9 +19,14 @@
     <a href="#mariadb-config" class="btn btn-primary" data-toggle="collapse">change password</a>
     <div id="mariadb-config" class="collapse">
         <pre>
-
-            sudo systemctl stop mariadb
+        
+            sudo mysql
             SET PASSWORD FOR 'root'@'localhost' = PASSWORD('1111');
+            
+            
+            sudo systemctl stop mariadb
+            sudo systemctl start mariadb
+            
         </pre>
     </div>
 </div>
