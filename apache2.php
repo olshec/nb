@@ -19,6 +19,14 @@
     <div id="restart-apache2" class="collapse">
         <pre>
 
+    Установка каьалога для апача
+    DocumentRoot /home/user1/Documents/eclipse-soft/workspaces/php 
+        <Directory /home/user1/Documents/eclipse-soft/workspaces/php>
+                Options Indexes FollowSymlinks
+                AllowOverride all
+                Require all granted
+        </Directory>
+
     Это "жёсткий" перезапуск: 
     <code>sudo /etc/init.d/apache2 restart</code>
 
