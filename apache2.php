@@ -19,7 +19,7 @@
     <div id="restart-apache2" class="collapse">
         <pre>
 
-    Установка каьалога для апача
+    Установка каталога для апача (/etc/apache2/sites-enabled/000-default.conf)
     DocumentRoot /home/user1/Documents/eclipse-soft/workspaces/php 
         <Directory /home/user1/Documents/eclipse-soft/workspaces/php>
                 Options Indexes FollowSymlinks
