@@ -16,33 +16,33 @@
 <?php include 'navigator.php';?>
 
 <div class="container">
-    <a href="#mariadb-config" class="btn btn-primary" data-toggle="collapse">change password</a>
-    <div id="mariadb-config" class="collapse">
-        <pre>
-        
-            sudo mysql
-            SET PASSWORD FOR 'root'@'localhost' = PASSWORD('1111');
-            
-            
-            sudo systemctl stop mariadb
-            sudo systemctl start mariadb
-            
-        </pre>
-    </div>
+    <a href="#postgres-config" class="btn btn-primary" data-toggle="collapse">postgresql command</a>
+    <div id="postgres-config" class="collapse">
+    <pre>
+
+    sudo su - postgres
+    psql -h localhost  -U postgres
+
+    \c - get database
+    \l - list of databases
+    \d - describe fields in table
+    \dt - describe tables
+    \dT+ - describe types
+    \g - last command
+    DROP TABLE resume CASCADE;
+
+    CREATE DATABASE yii2basic
+    \password postgres  - set password for user 'postgres'
+
+    ./yii migrate/down 1
+    ./yii migrate
+
+    DROP TYPE gender_enum;
+    CREATE TYPE gender_enum AS ENUM ('male', 'female');
+
+    </pre>
+  </div>
 </div>
-<br>
-
-
-
     
 </body>
-
 </html>
-
-
-
-
-
-
-
-

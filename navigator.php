@@ -21,14 +21,17 @@
             <li class="nav-item">
                 <a class="nav-link" href="ssh.php">ssh</a>
             </li>
-         <li class="nav-item">
+         	<li class="nav-item">
                 <a class="nav-link" href="composer.php">ssh</a>
             </li>
-         <li class="nav-item">
+         	<li class="nav-item">
                 <a class="nav-link" href="rust.php">rust</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="mysql.php">mysql</a>
+            </li>
+          	<li class="nav-item">
+                <a class="nav-link" href="postgresql.php">postgresql</a>
             </li>
          
             <!-- Dropdown -->

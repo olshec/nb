@@ -1,0 +1,21 @@
+
+POSTGRES:
+sudo su - postgres
+psql -h localhost  -U postgres
+
+\c - get database
+\l - list of databases
+\d - describe fields in table
+\dt - describe tables
+\dT+ - describe types
+\g - last command
+DROP TABLE resume CASCADE;
+
+CREATE DATABASE yii2basic
+\password postgres  - set password for user 'postgres'
+
+./yii migrate/down 1
+./yii migrate
+
+DROP TYPE gender_enum;
+CREATE TYPE gender_enum AS ENUM ('male', 'female');
