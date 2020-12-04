@@ -22,6 +22,7 @@
         git clone https://github.com/Mange/rtl8192eu-linux-driver.git
 
         sudo dkms add ./rtl8192eu-linux-driver
+        -- maybe need do make
 
         sudo dkms install -m rtl8192eu -v 1.0
 
