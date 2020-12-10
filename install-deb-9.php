@@ -79,7 +79,14 @@
         #!/bin/bash
         xrandr --output VGA-1 --auto
         xrandr --output HDMI-1 --off
-    </pre>
+
+
+        CONFIGURE KEYBOARD:
+        The configured keyboard shortcuts are stored in : ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+        And the system default (at least on OpenSuse 12.1) : /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+
+
+        </pre>
 
     
 </body>
