@@ -86,6 +86,9 @@
         And the system default (at least on OpenSuse 12.1) : /etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
 
 
+
+        HTML:
+        	https://www.html-tidy.org/documentation/
         </pre>
 
     
