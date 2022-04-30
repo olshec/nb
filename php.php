@@ -89,10 +89,13 @@
         </div>
     </div>
     
+    <p></p>
+    
     <div class="container">
-        <a href="#settings-phpdoc" class="btn btn-primary" data-toggle="collapse">настройка размера файла</a>
-        <div id="settings-phpdoc" class="collapse">
+        <a href="#max-size" class="btn btn-primary" data-toggle="collapse">настройка размера файла</a>
+        <div id="max-size" class="collapse">
             <pre>
+            
         Type the following command to edit the php.ini:
         $ sudo vi /etc/php/7.0/apache2/php.ini
         
