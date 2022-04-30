@@ -89,6 +89,26 @@
         </div>
     </div>
     
+    <div class="container">
+        <a href="#settings-phpdoc" class="btn btn-primary" data-toggle="collapse">настройка размера файла</a>
+        <div id="settings-phpdoc" class="collapse">
+            <pre>
+        Type the following command to edit the php.ini:
+        $ sudo vi /etc/php/7.0/apache2/php.ini
+        
+        Find and set the following two values:
+        post_max_size = 100M
+        upload_max_filesize = 100M
+        
+        Save and close the file. Where,
+    
+        post_max_size = 100M :
+        upload_max_filesize = 100M : Maximum allowed size for uploaded files.
+        
+			</pre>
+        </div>
+    </div>
+    
 
 
 </body>

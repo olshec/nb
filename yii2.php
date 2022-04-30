@@ -17,6 +17,8 @@
 
 <pre>
     sudo a2enmod rewrite
+    
+    Обновление каптчи: $this->createAction('captcha')->getVerifyCode(true);
 </pre>
 
 </body>
