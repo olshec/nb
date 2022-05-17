@@ -1,0 +1,121 @@
+
+
+<pre>
+
+    use yii\data\Pagination;
+
+//create a pagination object with the total count
+    $count = $query->count();
+    $pagination = new Pagination(['totalCount' => $count]);
+    $pagination->pageSize = 5;
+    $userTestsWithResult = $query->offset($pagination->offset)
+    ->limit($pagination->limit)
+    ->all();
+
+
+'pagination' => $pagination,
+
+
+
+
+
+    use yii\widgets\LinkPager;
+
+
+    <?php 
+       echo LinkPager::widget([
+           'pagination' => $pagination,
+           'options' => ['class' => 'pagination pagination-lg justify-content-center pagination-courses'],
+           'linkOptions' => ['class' => 'page-link'],
+           'prevPageLabel' => '&laquo;',
+           'nextPageLabel' => '&raquo;',
+           'activePageCssClass' => 'active',
+           'pageCssClass' => 'page-item',
+           'prevPageCssClass' => 'page-item',
+           'nextPageCssClass' => 'page-item',
+           'disabledPageCssClass' => 'page-link disabled'
+           
+       ]);
+    ?>
+
+
+
+
+    andWhere(['not in', 'id', $modules])
+
+
+        //AccessControl
+                'access' => [
+                    'class' => AccessControl::className(),
+                    'rules' => [
+                        [
+                            'allow' => true,
+                            'actions' =>  ['login'],
+                        ],
+                        [
+                            'allow' => true,
+                            'actions' =>  ['index', 'create', 'view', 'update',
+                                'delete',
+                            ],
+                            'roles' => ['administrator'],
+                        ],
+                        [
+                            'allow' => true,
+                            'actions' =>  ['teacher-view', 'courses-teacher-view',
+                                'teacher-create-course', 'save-course', 'remove-course',
+                            ],
+                            'roles' => ['administrator', 'teacher'],
+                        ],
+                        [
+                            'allow' => true,
+                            'actions' =>  ['student-view', 'courses-student-view',
+                            ],
+                            'roles' => ['student'],
+                        ],
+                    ],
+                ],
+
+
+
+    class LoginCest
+    {
+        public function ensureThatLoginWorks(AcceptanceTester $I)
+        {
+            $I->amOnPage(Url::toRoute('/site/login'));
+            $I->see('Login', 'h1');
+    
+            $I->amGoingTo('try to login with correct credentials');
+            $I->fillField('input[name="LoginForm[username]"]', 'admin');
+            $I->fillField('input[name="LoginForm[password]"]', 'admin');
+            $I->click('login-button');
+            $I->wait(2); // wait for button to be clicked
+    
+            $I->expectTo('see user info');
+            $I->see('Logout');
+        }
+    }
+    
+    
+    $this->params['breadcrumbs'][] = ['label' => 'Modules', 'url' => ['index']];
+    $this->params['breadcrumbs'][] = $this->title;
+    
+    oninvalid="this.setCustomValidity('Пожалуйста заполните это поле')" oninput="this.setCustomValidity('')"
+    
+    
+    установка selenium: https://codeception.com/docs/03-AcceptanceTests 
+    
+    npm install selenium-standalone -g
+    selenium-standalone install
+    
+    Launch this command in a separate terminal:
+    selenium-standalone start
+    
+    
+    
+    php ./vendor/bin/codecept g:cest acceptance Signin
+    
+    php ./vendor/codeception/codeception/codecept run
+    
+    php ./vendor/bin/codecept run tests/acceptance/teacher/
+
+</pre>

@@ -21,6 +21,13 @@
     Обновление каптчи: $this->createAction('captcha')->getVerifyCode(true);
 </pre>
 
+
+<pre>
+ 
+	<a href="yii2.html"> Дополнительно </a>
+
+</pre>
+
 </body>
 
 </html>
