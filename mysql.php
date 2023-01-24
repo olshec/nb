@@ -26,6 +26,9 @@
             
             sudo systemctl stop mariadb
             sudo systemctl start mariadb
+
+	
+		SIGN IN without sudo: sudo snap connect mysql-workbench-community:password-manager-service :password-manager-service
             
         </pre>
     </div>
