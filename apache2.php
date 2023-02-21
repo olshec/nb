@@ -28,7 +28,7 @@
         </Directory>
         
         
-    To enable the module:     a2enmod rewrite
+    To enable the module: a2enmod rewrite
         
 
     Это "жёсткий" перезапуск: 
