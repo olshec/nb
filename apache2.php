@@ -26,6 +26,10 @@
                 AllowOverride all
                 Require all granted
         </Directory>
+        
+        
+    To enable the module:     a2enmod rewrite
+        
 
     Это "жёсткий" перезапуск: 
     <code>sudo /etc/init.d/apache2 restart</code>
